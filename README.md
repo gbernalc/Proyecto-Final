@@ -54,7 +54,7 @@ Aspectos a mejorar/añadir:
     Animaciones y dinámicas: Pequeñas animaciones con JavaScript para mejorar la experiencia de usuario, como efectos de scroll o menús desplegables.
 
 
-4. Conclusiones del proyecto (Obligatorio)
+4. Conclusiones del proyecto 
 
 Con este proyecto pretendo reforzar mis conocimientos en maquetación web, diseño responsive y programación en JavaScript.
 Me permitirá trabajar con metodologías profesionales como el uso de preprocesadores CSS (SASS) y el aprovechamiento de frameworks como Bootstrap para acelerar el desarrollo.
