@@ -1,0 +1,21 @@
+ /*grid-system general*/
+.body-i {
+    display: grid;
+    background-color: $bg-color-gral;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header header header header"
+                         "main main main main"
+                         "aside aside aside aside"
+                         "footer footer footer footer";
+
+    @media screen and (max-width:450px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "header"
+                             "main"
+                             "aside"
+                             "footer";
+    }
+}
+/*-----------------------*/

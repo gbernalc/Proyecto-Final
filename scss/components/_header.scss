@@ -1,0 +1,108 @@
+/*header*/
+.header-i {
+    grid-area: header;
+    background-color: transparent;
+    
+    .video-container {
+        @extend %flex;
+        .video-preview {
+            width: 100%;
+            position: relative;
+            height: 100vh;
+            object-fit: cover;
+        
+        }
+    }
+    .slogan-container {
+        color: $color-texto-alt;
+        position: absolute;
+        font-family: $fuente-sec;
+    
+        .slogan {
+            font-size: 4rem;
+            color: $color-texto-alt;
+            
+            @media screen and (max-width:450px) {
+                font-size: nth($font-size,3);
+            }
+            @media (min-width:451px) and (max-width:992px) {
+                font-size: nth($font-size,5);
+            }
+        }
+    @media screen and (max-width:450px) {
+            margin-top: 3rem;
+            position: absolute;
+            z-index: 1;
+    }
+    }
+    /*header para paginas alternativas*/
+    .top-d {
+        @include flex(flex,center,center,column);
+        .parallax {
+            background-image: url("../resources/edit-1.webp");
+            min-height: 280px;
+
+            @extend %parallax-effect;
+        }
+        .parallax::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: 0;
+            right: 0;
+            top: 0;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        .parallax-mod {
+            background-image: url("../resources/contacto.webp");
+            /*https://i.ibb.co/gRxgMyV/image-2.webp*/
+        }
+        .top-i {
+            width: 100%;
+            .top-img {
+                position: relative;
+                width: 100%;
+            }
+        @media screen and (max-width:450px) {
+            display: none;
+        }
+        }
+        .top-text {
+            @extend %flex;
+            position:absolute;
+            color: $color-texto-alt;
+            font-family: $fuente-sec;
+            h2 {
+                font-size: nth($font-size,7);
+            }
+        }
+    @media screen and (max-width:450px) {
+        margin: 0;
+    }
+    @media (min-width:451px) and (max-width:992px) {
+        margin-top: 40px;
+    }
+    }
+    .boton-carta {
+        padding: .2rem 1rem;
+        font-family: $fuente-ppal;
+        background-color: map-get($boton-carta,bg-boton);
+        color: map-get($boton-carta,color-carta);
+        font-size: map-get($boton-carta, f-size);
+        font-weight: map-get($boton-carta,f-weight);
+        position: absolute;
+        margin-top: 10rem;
+        border-radius: .3rem;
+        text-decoration: none;
+        &:hover {
+            color: $color-texto;
+            background-color: $color-texto-hover;
+        }
+    @media screen and (max-width:450px) {
+            position: absolute;
+            font-size: 1.1rem;
+    }
+    }
+
+}
+/*-----------------------*/

@@ -1,0 +1,63 @@
+/*carta*/
+.body-c {
+    background-color: $bg-color-gral;
+    @include flex(flex,space-between,stretch,column);
+}
+.main-c {
+    @include flex(flex,space-between,center,row);
+    margin: 1rem 5rem;
+    .margin-top-carta {
+        @media screen and (max-width:450px) {
+        margin-top: 79px;
+        }
+    }
+    .img-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @media screen and (max-width:450px) {
+        display: block;
+        margin: 0;   
+    }
+    @media (min-width:451px) and (max-width:992px) {
+        display: block; 
+    }
+}
+.border-right-carta {
+    padding-left: 1rem;
+    border-right: 1px solid $color-texto;
+    @media screen and (max-width:992px) {
+        border: 0;    
+    }
+}
+.border-mid {
+    @media screen and (max-width:992px) {
+        margin-top: 1rem;
+        padding-top: 2rem;
+        border-top: 1px solid $color-texto;
+    }
+}
+.border-top-carta-mod {
+    margin-top: 1rem;
+    padding-top: 2rem;
+    border-top: 1px solid $color-texto;
+}
+.border-top-carta {
+    border-top: 1px solid $color-texto;
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+.border-right-carta {
+    padding-left: 1rem;
+    border-right: 1px solid $color-texto;
+    @media screen and (max-width:992px) {
+        border: 0;
+    }
+}
+.margin-bottom-carta {
+    @media screen and (max-width:450px) {
+        margin-bottom: 1rem;
+    }
+}
+/*-----------------------*/

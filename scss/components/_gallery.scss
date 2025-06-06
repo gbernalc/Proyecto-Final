@@ -1,0 +1,81 @@
+/*galeria*/
+.bg-car {
+    height: 100%;
+}
+.car-mod {
+    height: 100%;
+}
+.carousel-item {
+    height: 68vh;
+
+}
+.container2{
+    width: 50vw;
+    margin: 1rem auto;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    @media screen and (max-width:1200px) {
+        width: 80vw;
+    }
+    
+  }
+  
+.container2:hover .overlay{
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+.overlay{
+    position: absolute;
+    background-color: #b1ea7085;;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(1.3);
+    opacity: 0;
+    transition: transform .4s ease 0s;
+    
+  }
+  
+.overlay span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 2rem;
+    color: $color-texto;
+  }
+  
+.container2 img{
+    transition: transform .8s ease;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+  
+.container2:hover img{
+    transform: scale(1.1);
+  }
+.gallery-intro {
+    padding: 1rem 0;
+    text-align: center;
+    
+    .gallery-text {
+        font-family: $fuente-ppal;
+        font-size: nth($font-size,3);
+        color: $color-texto;
+        margin-top: 1rem;
+    }
+
+    .gallery-text-c {
+        display: inline-block;
+        font-family: $fuente-sec;
+        font-size: nth($font-size,4);
+        color: $color-texto;
+        align-items: center;
+    }
+}
+/*-----------------------*/

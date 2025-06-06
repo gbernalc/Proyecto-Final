@@ -1,0 +1,35 @@
+/*map-iframe*/
+.map {
+    text-align: center;
+    font-family: $fuente-ppal;
+    color: $color-texto;
+    margin-top: 1rem;
+    .map-icon {
+        font-size: 2rem;
+        color: $color-texto;
+    }
+
+    .map-text {
+        font-size: nth($font-size,3);
+    }
+
+    .light {
+        font-weight: 400;
+        font-size: nth($font-size,2);
+    }
+
+    .map-text-m {
+        margin-bottom: 1rem;
+    }
+
+    .map-iframe {
+        width: 50vw;
+        height: 68vh;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        @media screen and (max-width:1200px) {
+            width: 80vw;
+        }
+    }
+}
+/*-----------------------*/
